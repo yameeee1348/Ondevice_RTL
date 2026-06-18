@@ -1,0 +1,19 @@
+/*
+ * ap_main.h
+ *
+ *  Created on: 2026. 4. 28.
+ *      Author: kccistc
+ */
+
+#ifndef SRC_AP_AP_MAIN_H_
+#define SRC_AP_AP_MAIN_H_
+
+
+#include <stdint.h>
+
+uint32_t ReadSwitches();
+void ap_init();
+void ap_execute();
+
+
+#endif /* SRC_AP_AP_MAIN_H_ */

@@ -1,0 +1,57 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Vivado generated files
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+*.wcfg
+
+.Xil/
+.cache/
+.hw/
+.ip_user_files/
+.runs/
+.sim/
+.gen/
+xsim.dir/
+
+# Vivado project backup/temp
+*.tmp
+*.bak
+
+# Vitis / SDK generated files
+vitis_workspace/
+.metadata/
+Debug/
+Release/
+.settings/
+.launches/
+
+*.elf
+*.bin
+*.bit
+*.mmi
+*.ltx
+
+# Simulation
+transcript
+vsim.wlf
+work/
+modelsim.ini
+*.vcd
+*.fst
+*.ghw
+
+# Archives
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
