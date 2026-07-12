@@ -2,7 +2,7 @@
 
 SystemVerilog/Verilog 기반 RTL 설계, FPGA 보드 검증, AXI/APB 주변장치, Vitis C 애플리케이션을 정리한 포트폴리오 저장소입니다. SPI/I2C/UART 통신 IP, RV32I CPU와 APB peripheral, 센서/시간 전송 시스템까지 온디바이스 시스템반도체 설계 과정에서 구현한 프로젝트를 포함합니다.
 
-이 README는 면접관이 저장소를 열었을 때 어떤 프로젝트가 무엇을 보여주는지 빠르게 파악할 수 있도록 작성했습니다. 개인 연락처 등 이력서의 민감 정보는 포함하지 않았습니다.
+
 
 ## Core Skills
 
