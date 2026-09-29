@@ -19,7 +19,7 @@ SystemVerilog/Verilog 기반 RTL 설계, FPGA 보드 검증, AXI/APB 주변장�
 
 | Directory | What It Shows | Key Files |
 | --- | --- | --- |
-| `AXI_SPI/` | AXI4-Lite SPI master custom IP, MicroBlaze/Vitis control software, SPI board demo, colocated UVM copy | `ip_repo/axi_spi_m_1.0/hdl/axi_spi_m_v1_0_S00_AXI.v`, `ip_repo/axi_spi_m_1.0/hdl/axi_spi_m_v1_0.v`, `vitis/src/HAL/SPI/SPI.c`, `vitis/src/ap/ap_main.c`, `0504_AXI_SPI_UVM/` |
+| `AXI_SPI/` | AXI4-Lite SPI master custom IP, MicroBlaze/Vitis control software, SPI board demo; UVM verification in the separate repository | `ip_repo/axi_spi_m_1.0/hdl/axi_spi_m_v1_0_S00_AXI.v`, `ip_repo/axi_spi_m_1.0/hdl/axi_spi_m_v1_0.v`, `vitis/src/HAL/SPI/SPI.c`, `vitis/src/ap/ap_main.c`, [AXI SPI UVM](https://github.com/yameeee1348/Ondevice_UVM/tree/main/0504_AXI_SPI_UVM) |
 | `AXI_I2C/` | AXI4-Lite I2C master custom IP, open-drain SDA control, Vitis HAL/app, I2C slave/FND demo | `ip_repo/i2c_1.0/hdl/i2c_v1_0_S00_AXI.v`, `ip_repo/i2c_1.0/hdl/i2c_v1_0.v`, `vitis/src/ap/I2C/i2c.c`, `vitis/src/main.c`, `20260502_I2C_slave.srcs/sources_1/new/i2c_slave.sv` |
 | `RV32I/` | RV32I CPU, APB master, BRAM/GPIO/GPO/FND/UART peripherals, memory-mapped I/O execution | `RV32I.srcs/sources_1/new/RV32_CPU.sv`, `RV32I.srcs/sources_1/new/rv32i_datapath.sv`, `RV32I.srcs/sources_1/new/APB_master.sv`, `RV32I.srcs/sources_1/new/RV32I_TOP.sv` |
 | `UART_SR_DHT2/` | UART command path with watch/stopwatch, SR04 distance, DHT11 temperature/humidity, FND output | `UART_SR_DHT2.srcs/sources_1/new/TOP_main.v`, `UART_SR_DHT2.srcs/sources_1/new/SR04.v`, `UART_SR_DHT2.srcs/sources_1/new/dth11_ctrl.v`, `UART_SR_DHT2.srcs/sources_1/new/top_uart.v` |
@@ -86,4 +86,4 @@ If time is short, review in this order:
 4. `RV32I/RV32I.srcs/sources_1/new/APB_master.sv` and `RV32I_TOP.sv` - CPU-to-peripheral system integration.
 5. `UART_SR_DHT2/UART_SR_DHT2.srcs/sources_1/new/TOP_main.v` - sensor/time/UART board-level integration.
 
-For verification-specific review, see the separate UVM repository or the copied `AXI_SPI/0504_AXI_SPI_UVM/` directory.
+For AXI SPI verification, see the [canonical UVM project](https://github.com/yameeee1348/Ondevice_UVM/tree/main/0504_AXI_SPI_UVM) in `Ondevice_UVM`.
